@@ -11,13 +11,15 @@ export default class App {
     }
 
     convertirAString(numero) {
-        let numero 
+        let s = "";
+        let i = 1; 
 
-        while(i <= 20) {
-
+        while(i <= numero) {
+            s = s + "*"
+            i = i + 1;
         }
 
-        return numero;
+        return s;
     }
 
     obtenerDivisibles(numero) {
@@ -45,6 +47,8 @@ let app = new App();
 console.log('Probando factorial');
 console.log(app.factorial(5));
 console.log('Probando convertirAString');
-console.log()
+console.log(app.convertirAString(6));
+console.log(app.convertirAString(10));
 console.log('Probando obtenerDivisibles');
+console.log(app.obtenerDivisibles(8));
 console.log('Probando elevar');
