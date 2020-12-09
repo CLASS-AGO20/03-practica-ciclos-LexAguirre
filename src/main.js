@@ -34,7 +34,7 @@ export default class App {
             i = i -1;
         }while(i > 0);
 
-        return divisibles; 
+        return divisible; 
     }
 
     elevar(numero, potencia) {
